@@ -1,21 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Theme as UWPThemeProvider, getTheme } from "react-uwp/Theme";
+import MyComponent from "./MyComponent";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-         <section className="main-renderer">
-          <div className="container row">
-            <div className="col-4">col-4</div>
-            <div className="col-4">col-4</div>
-            <div className="col-4">col-4</div>
-          </div>
-         </section>
-      </header>
-    </div>
+    <React.Fragment>
+      <UWPThemeProvider
+        className="App"
+        theme={getTheme({
+          themeName: "dark", // set custom theme
+          accent: "#0078D7", // set accent color
+          useFluentDesign: true, // sure you want use new fluent design.
+          desktopBackgroundImage: "http://127.0.0.1:8092/static/images/jennifer-bailey-10753.jpg" // set global desktop background image
+        })}
+      >
+        <MyComponent />
+      </UWPThemeProvider>
+    </React.Fragment>
   );
 }
 
