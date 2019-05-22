@@ -4,7 +4,7 @@ import {Button} from "react-uwp/Button";
 export default class MyComponent extends React.Component{
     render(){
         return (
-            <Button tooltip="Mini Tooltip">Oi</Button>
+            <Button tooltip="Mini Tooltip">Testa Codigo</Button>
         )
     }
 }
