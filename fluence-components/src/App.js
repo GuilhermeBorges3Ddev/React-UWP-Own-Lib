@@ -1,7 +1,7 @@
 import React from 'react';
 import { Theme as UWPThemeProvider, getTheme } from "react-uwp/Theme";
-import MyComponent from "./MyComponent";
-import './App.css';
+import MyComponent from "./Components/MyComponent";
+import './css/App.css';
 
 function App() {
   return (
