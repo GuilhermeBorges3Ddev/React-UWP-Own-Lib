@@ -1,17 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: "../img/dark-mountains.jpg" !important;
-}
-
 .App {
   text-align: center;
   height: 100vh !important; 
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

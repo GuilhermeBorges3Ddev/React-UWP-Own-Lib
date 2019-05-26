@@ -10,7 +10,8 @@ function App() {
       theme={getTheme({
         themeName: "dark", // set custom theme
         accent: "#0078D7", // set accent color
-        useFluentDesign: true // sure you want use new fluent design.
+        useFluentDesign: true, // sure you want use new fluent design.
+        desktopBackground: "./assets/img/dark-mountains.jpg !important"
       })}
     >
       <CallToActionBtn />
@@ -19,3 +20,5 @@ function App() {
 }
 
 export default App;
+
+
