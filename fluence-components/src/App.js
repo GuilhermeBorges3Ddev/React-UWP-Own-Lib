@@ -1,7 +1,7 @@
 import React from 'react';
 import { Theme, getTheme } from "react-uwp/Theme";
-import CallToActionBtn from "./Components/CallToActionBtn";
-import './Assets/css/App.css';
+import CallToActionBtn from "./components/CallToActionBtn";
+import '../src/assets/css/App.css';
 
 function App() {
   return (
